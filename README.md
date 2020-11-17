@@ -7,7 +7,7 @@ This Time-Selector Component will work on iOS devices only.
 - Expo
 ## Installation
 ```
- git clone https://github.com/hamzasumbal/Meal-Track
+ git clone https://github.com/hamzasumbal/Time-Selector-ScrollView-react-native
  cd Meal-Track
  npm install
 ```
