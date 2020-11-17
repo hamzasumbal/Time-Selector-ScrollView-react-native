@@ -5,7 +5,7 @@ import TimeSelector from './src/components/TimeSelector'
 import Colors from './src/constants/Colors'
 
 // LIMITS has to callibrated if you are changing the styling of the TimeSelector component.
-//LIMITS sets the limit of y-cordinates, that can help us detect the value of time in middle of the ScrollView.
+//LIMITS sets the limit of y-cordinates, that can help us detect the item in middle of the ScrollView.
 const LIMITS = 62.5
 
 export default function App() {
