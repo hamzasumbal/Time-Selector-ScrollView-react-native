@@ -3,6 +3,10 @@
     "name": "Time-Select-ScrollView",
     "slug": "Time-Select-ScrollView",
     "version": "1.0.0",
+    "platforms": [
+      "android",
+      "ios"
+   ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
