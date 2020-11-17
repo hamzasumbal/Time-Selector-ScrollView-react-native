@@ -12,7 +12,6 @@ let MinutesYScroll;
 const TimeSelector = ({limit, defaultOffsetHour}) => {
     const [selectedHour, setSelectedHour] = useState(defaultOffsetHour)
     const [selectedMinute, setSelectedMinute] = useState("00")
-   /*  const limit = 62.5; */
     const defaultOffset = limit * (defaultOffsetHour);
     
 
