@@ -9,7 +9,7 @@ This is an iOS-style 'Picker' created using ScrollView from react-native. I have
 ## Installation
 ```
  git clone https://github.com/hamzasumbal/Time-Selector-ScrollView-react-native
- cd Meal-Track
+ cd Time-Selector-ScrollView-react-native
  npm install
 ```
 ## Start Your App
