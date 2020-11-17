@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, StyleSheet, ScrollView} from 'react-native'
+import { View, Text, StyleSheet, ScrollView, Button} from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
 import Colors from '../constants/Colors'
 const Hours = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']
@@ -12,7 +12,6 @@ let MinutesYScroll;
 const TimeSelector = ({limit, defaultOffsetHour}) => {
     const [selectedHour, setSelectedHour] = useState(defaultOffsetHour)
     const [selectedMinute, setSelectedMinute] = useState("00")
-   /*  const limit = 62.5; */
     const defaultOffset = limit * (defaultOffsetHour);
     
 
@@ -130,11 +129,22 @@ const TimeSelector = ({limit, defaultOffsetHour}) => {
                             </View>
                         })}
                     </View>
+                    
                 </ScrollView>
-
-
+               
             </View>
+            
         </View>
+        <View style = {styles.button}>
+        <Button
+        title = {"Press here"}
+        color = {"white"}
+        onPress = {()=>{
+            alert(`${selectedHour} : ${selectedMinute}`)
+        }}
+        />
+        </View>
+
     </View>
 }
 
@@ -186,8 +196,18 @@ const styles = StyleSheet.create({
         right: 10
     },
     button: {
-        width: "100%",
-        alignSelf: "center",
+        width : 200,
+        height : 50,
+        justifyContent : "center",
+        alignSelf : "center",
+        marginTop : 30,
+        borderRadius : 20,
+        borderColor  :"white"
+    },
+    buttonText : {
+        fontSize : 20,
+        alignSelf : "center",
+        color : "white"
     }
 });
 

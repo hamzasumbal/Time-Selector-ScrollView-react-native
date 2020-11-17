@@ -4,11 +4,15 @@ import { StyleSheet, Text, View } from 'react-native';
 import TimeSelector from './src/components/TimeSelector'
 import Colors from './src/constants/Colors'
 
+// LIMITS has to callibrated if you are changing the styling of the TimeSelector component.
+//LIMITS sets the limit of y-cordinates, that can help us detect the value of time in middle of the ScrollView.
+const LIMITS = 62.5
+
 export default function App() {
   return (
     <View style={styles.container}>
       <Text  style = {styles.headerText}>Select Time</Text>
-      <TimeSelector limit = {62.5} defaultOffsetHour = {12}/>
+      <TimeSelector limit = {LIMITS} defaultOffsetHour = {12}/>
       <StatusBar style="auto" />
     </View>
   );
