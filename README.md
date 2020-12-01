@@ -3,6 +3,8 @@ This is an iOS-style 'Picker' created using ScrollView from react-native. The Ti
 
 
 ![1](https://user-images.githubusercontent.com/70642483/99440505-7c955180-2938-11eb-9630-6dd729a68334.png)
+
+https://snack.expo.io/@git/github.com/hamzasumbal/Time-Selector-ScrollView-react-native
 ## Requirements
 - Node js
 - Expo
